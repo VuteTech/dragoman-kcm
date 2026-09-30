@@ -1,0 +1,22 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "blagovest@petrovs.info",
+                "Name": "Blagovest Petrov",
+                "Name[bg]": "Благовест Петров"
+            }
+        ],
+        "Description": "Offline machine translation: memory use, network access and language models",
+        "Description[bg]": "Машинен превод без интернет: памет, мрежов достъп и езикови модели",
+        "Icon": "dev.l10n_bg.dragomand",
+        "License": "GPL-3.0-or-later",
+        "Name": "Offline Translation",
+        "Name[bg]": "Офлайн превод",
+        "Website": "https://dragomand.l10n-bg.dev"
+    },
+    "X-KDE-Keywords": "translation,translate,offline,machine translation,language model,Dragomand,Bergamot,Firefox Translations",
+    "X-KDE-Keywords[bg]": "превод,превеждане,офлайн,машинен превод,езиков модел,Dragomand,драгоман",
+    "X-KDE-System-Settings-Parent-Category": "regionalsettings",
+    "X-KDE-Weight": 60
+}

@@ -1,0 +1,302 @@
+# Bulgarian translation of kcm_dragomand.
+# SPDX-FileCopyrightText: 2026 Blagovest Petrov <blagovest@petrovs.info>
+# SPDX-FileCopyrightText: 2026 Vute Tech Ltd. <https://vute.tech>
+# SPDX-License-Identifier: GPL-3.0-or-later
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_dragomand\n"
+"Report-Msgid-Bugs-To: https://github.com/VuteTech/dragoman-kcm/issues\n"
+"POT-Creation-Date: 2026-10-01 02:27+0300\n"
+"PO-Revision-Date: 2026-10-01 12:00+0300\n"
+"Last-Translator: Blagovest Petrov <blagovest@petrovs.info>\n"
+"Language-Team: Bulgarian\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, kde-format
+msgctxt "@info"
+msgid "This version of Dragomand cannot be configured here. Update Dragomand to 0.2 or newer."
+msgstr "Тази версия на Dragomand не може да се настройва оттук. Обновете Dragomand до версия 0.2 или по-нова."
+
+#, kde-format
+msgctxt "@info %1 is an error message"
+msgid ""
+"The Dragomand translation service is not available, so its settings cannot be shown. Is Dragomand installed?\n"
+"%1"
+msgstr ""
+"Услугата за превод Dragomand не е достъпна и настройките ѝ не могат да бъдат показани. Инсталиран ли е Dragomand?\n"
+"%1"
+
+#, kde-format
+msgctxt "@info %1 is an error message"
+msgid "The settings could not be saved: %1"
+msgstr "Настройките не можаха да бъдат запазени: %1"
+
+#, kde-format
+msgctxt "@info translation quality"
+msgid "Very good"
+msgstr "Много добро"
+
+#, kde-format
+msgctxt "@info translation quality"
+msgid "Good"
+msgstr "Добро"
+
+#, kde-format
+msgctxt "@info translation quality"
+msgid "Fair"
+msgstr "Задоволително"
+
+#, kde-format
+msgctxt "@info translation quality"
+msgid "Basic"
+msgstr "Основно"
+
+#, kde-format
+msgctxt "@info %1 is a language pair, %2 an error message"
+msgid "Removing %1 failed: %2"
+msgstr "Премахването на %1 не успя: %2"
+
+#, kde-format
+msgctxt "@info"
+msgid "Every installed language model is up to date."
+msgstr "Всички инсталирани езикови модели са актуални."
+
+#, kde-format
+msgctxt "@info"
+msgid "An update is available for one language model."
+msgid_plural "Updates are available for %1 language models."
+msgstr[0] "Има обновление за един езиков модел."
+msgstr[1] "Има обновления за %1 езикови модела."
+
+#, kde-format
+msgctxt "@info %1 is an error message"
+msgid "Checking for updates failed: %1"
+msgstr "Проверката за обновления не успя: %1"
+
+#, kde-format
+msgctxt "@info %1 is a language pair, %2 an error message"
+msgid "Updating %1 failed: %2"
+msgstr "Обновяването на %1 не успя: %2"
+
+#, kde-format
+msgctxt "@item language pair"
+msgid "%1 to %2"
+msgstr "%1 към %2"
+
+msgctxt "@action:button"
+msgid "Try Again"
+msgstr "Нов опит"
+
+msgctxt "@title:group"
+msgid "Memory and Performance"
+msgstr "Памет и производителност"
+
+msgctxt "@label:spinbox"
+msgid "Memory budget for language models"
+msgstr "Памет за езиковите модели"
+
+msgctxt "@info"
+msgid "The most memory the loaded language models may take together. One language pair needs about 260 MiB. When another pair would not fit, the one unused for longest is unloaded first."
+msgstr "Най-много памет, която заредените езикови модели могат да заемат общо. Една езикова двойка се нуждае от около 260 MiB. Когато друга двойка не се побира, първо се освобождава най-отдавна неизползваната."
+
+msgctxt "@item:valuesuffix size in mebibytes"
+msgid "%1 MiB"
+msgstr "%1 MiB"
+
+msgctxt "@label:spinbox"
+msgid "Language pairs kept loaded when idle"
+msgstr "Езикови двойки, които остават заредени при бездействие"
+
+msgctxt "@info"
+msgid "Recently used pairs stay in memory, so the next translation starts at once instead of after a few seconds of loading. The pair in use is always kept."
+msgstr "Скоро използваните двойки остават в паметта, така че следващият превод започва веднага, а не след няколко секунди зареждане. Използваната в момента двойка винаги се запазва."
+
+msgctxt "@label:spinbox"
+msgid "Keep idle language pairs loaded for"
+msgstr "Неизползваните езикови двойки остават заредени"
+
+msgctxt "@info"
+msgid "After this long without use, a pair is unloaded and its memory is freed."
+msgstr "След толкова време без употреба двойката се разтоварва и паметта ѝ се освобождава."
+
+msgctxt "@item:valuesuffix"
+msgid "%1 minute"
+msgid_plural "%1 minutes"
+msgstr[0] "%1 минута"
+msgstr[1] "%1 минути"
+
+msgctxt "@label:spinbox"
+msgid "Stop the translation service when idle after"
+msgstr "Спиране на услугата за превод след бездействие от"
+
+msgctxt "@info"
+msgid "Once nothing is loaded, the service leaves memory entirely after this long. It starts again by itself on the next request."
+msgstr "Когато нищо не е заредено, услугата напуска паметта напълно след толкова време. Тя се стартира сама отново при следващата заявка."
+
+msgctxt "@item:valuesuffix"
+msgid "%1 second"
+msgid_plural "%1 seconds"
+msgstr[0] "%1 секунда"
+msgstr[1] "%1 секунди"
+
+msgctxt "@title:group"
+msgid "Network"
+msgstr "Мрежа"
+
+msgctxt "@option:check"
+msgid "Allow downloads and update checks"
+msgstr "Разрешаване на изтегляния и проверки за обновления"
+
+msgctxt "@info"
+msgid "When off, the service never goes online. Installed language models keep working; new ones can come only from distribution packages."
+msgstr "Когато е изключено, услугата никога не се свързва с интернет. Инсталираните езикови модели продължават да работят; нови могат да дойдат само от пакети на дистрибуцията."
+
+msgctxt "@option:check"
+msgid "Use pre-release language models"
+msgstr "Използване на предварителни версии на езиковите модели"
+
+msgctxt "@info"
+msgid "Mozilla's nightly models, published for testing before a release. They may translate better or worse than the released ones."
+msgstr "Нощните модели на Mozilla, публикувани за изпитване преди издаване. Те може да превеждат по-добре или по-зле от издадените."
+
+msgctxt "@title:group"
+msgid "Language Models"
+msgstr "Езикови модели"
+
+msgctxt "@info:status"
+msgid "Loading…"
+msgstr "Зареждане…"
+
+msgctxt "@info"
+msgid "The language models cannot be listed."
+msgstr "Езиковите модели не могат да бъдат изброени."
+
+msgctxt "@info"
+msgid "No language models are installed."
+msgstr "Няма инсталирани езикови модели."
+
+msgctxt "@info"
+msgid "A model is downloaded the first time a program asks for a translation between two languages."
+msgstr "Модел се изтегля първия път, когато програма поиска превод между два езика."
+
+msgctxt "@info model version"
+msgid "Version %1"
+msgstr "Версия %1"
+
+msgctxt "@info model origin"
+msgid "from a system package"
+msgstr "от системен пакет"
+
+msgctxt "@info model origin"
+msgid "downloaded"
+msgstr "изтеглен"
+
+msgctxt "@info %1 is a quality label such as Good"
+msgid "quality: %1"
+msgstr "качество: %1"
+
+msgctxt "@info list separator"
+msgid ", "
+msgstr ", "
+
+msgctxt "@info %1 is the model details"
+msgid "%1. Version %2 is available."
+msgstr "%1. Налична е версия %2."
+
+msgctxt "@info:status model not yet released"
+msgid "Experimental"
+msgstr "Експериментален"
+
+msgctxt "@info:status"
+msgid "Working…"
+msgstr "В процес…"
+
+msgctxt "@action:button"
+msgid "Remove"
+msgstr "Премахване"
+
+msgctxt "@info:tooltip"
+msgid "Remove the downloaded copy of %1"
+msgstr "Премахване на изтегленото копие на %1"
+
+msgctxt "@label"
+msgid "Disk space used"
+msgstr "Използвано дисково пространство"
+
+msgctxt "@info %2 is a size such as 31 MiB"
+msgid "%2 for one language model"
+msgid_plural "%2 for %1 language models"
+msgstr[0] "%2 за един езиков модел"
+msgstr[1] "%2 за %1 езикови модела"
+
+msgctxt "@action:button"
+msgid "Checking for Updates…"
+msgstr "Проверка за обновления…"
+
+msgctxt "@action:button"
+msgid "Check for Updates"
+msgstr "Проверка за обновления"
+
+msgctxt "@info"
+msgid "Downloads and update checks are turned off above."
+msgstr "Изтеглянията и проверките за обновления са изключени по-горе."
+
+msgctxt "@info"
+msgid "Asks Mozilla's model service for newer versions."
+msgstr "Пита услугата за модели на Mozilla за по-нови версии."
+
+msgctxt "@action:button"
+msgid "Updating…"
+msgstr "Обновяване…"
+
+msgctxt "@action:button"
+msgid "Update All"
+msgstr "Обновяване на всички"
+
+msgctxt "@action:button"
+msgid "Manage in Krakoman"
+msgstr "Управление в Krakoman"
+
+msgctxt "@info"
+msgid "Install language models for more languages, and translate text."
+msgstr "Инсталиране на езикови модели за още езици и превод на текст."
+
+msgctxt "@title:group"
+msgid "Status"
+msgstr "Състояние"
+
+msgctxt "@info"
+msgid "The translation service does not answer."
+msgstr "Услугата за превод не отговаря."
+
+msgctxt "@label"
+msgid "Version"
+msgstr "Версия"
+
+msgctxt "@label"
+msgid "Memory in use"
+msgstr "Използвана памет"
+
+msgctxt "@label"
+msgid "Loaded language pairs"
+msgstr "Заредени езикови двойки"
+
+msgctxt "@info no language pairs loaded"
+msgid "None"
+msgstr "Няма"
+
+msgctxt "@action:button"
+msgid "Refresh Status"
+msgstr "Обновяване на състоянието"
+
+msgctxt "@action:button"
+msgid "Show Status"
+msgstr "Показване на състоянието"
+
+msgctxt "@info"
+msgid "The version of the translation service, its memory use and the language pairs loaded right now."
+msgstr "Версията на услугата за превод, използваната от нея памет и заредените в момента езикови двойки."

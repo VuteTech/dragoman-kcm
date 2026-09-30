@@ -1,0 +1,321 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the kcm_dragomand package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_dragomand\n"
+"Report-Msgid-Bugs-To: https://github.com/VuteTech/dragoman-kcm/issues\n"
+"POT-Creation-Date: 2026-10-01 02:27+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This version of Dragomand cannot be configured here. Update Dragomand to 0.2 "
+"or newer."
+msgstr ""
+
+#, kde-format
+msgctxt "@info %1 is an error message"
+msgid ""
+"The Dragomand translation service is not available, so its settings cannot "
+"be shown. Is Dragomand installed?\n"
+"%1"
+msgstr ""
+
+#, kde-format
+msgctxt "@info %1 is an error message"
+msgid "The settings could not be saved: %1"
+msgstr ""
+
+#, kde-format
+msgctxt "@info translation quality"
+msgid "Very good"
+msgstr ""
+
+#, kde-format
+msgctxt "@info translation quality"
+msgid "Good"
+msgstr ""
+
+#, kde-format
+msgctxt "@info translation quality"
+msgid "Fair"
+msgstr ""
+
+#, kde-format
+msgctxt "@info translation quality"
+msgid "Basic"
+msgstr ""
+
+#, kde-format
+msgctxt "@info %1 is a language pair, %2 an error message"
+msgid "Removing %1 failed: %2"
+msgstr ""
+
+#, kde-format
+msgctxt "@info"
+msgid "Every installed language model is up to date."
+msgstr ""
+
+#, kde-format
+msgctxt "@info"
+msgid "An update is available for one language model."
+msgid_plural "Updates are available for %1 language models."
+msgstr[0] ""
+msgstr[1] ""
+
+#, kde-format
+msgctxt "@info %1 is an error message"
+msgid "Checking for updates failed: %1"
+msgstr ""
+
+#, kde-format
+msgctxt "@info %1 is a language pair, %2 an error message"
+msgid "Updating %1 failed: %2"
+msgstr ""
+
+#, kde-format
+msgctxt "@item language pair"
+msgid "%1 to %2"
+msgstr ""
+
+msgctxt "@action:button"
+msgid "Try Again"
+msgstr ""
+
+msgctxt "@title:group"
+msgid "Memory and Performance"
+msgstr ""
+
+msgctxt "@label:spinbox"
+msgid "Memory budget for language models"
+msgstr ""
+
+msgctxt "@info"
+msgid ""
+"The most memory the loaded language models may take together. One language "
+"pair needs about 260 MiB. When another pair would not fit, the one unused "
+"for longest is unloaded first."
+msgstr ""
+
+msgctxt "@item:valuesuffix size in mebibytes"
+msgid "%1 MiB"
+msgstr ""
+
+msgctxt "@label:spinbox"
+msgid "Language pairs kept loaded when idle"
+msgstr ""
+
+msgctxt "@info"
+msgid ""
+"Recently used pairs stay in memory, so the next translation starts at once "
+"instead of after a few seconds of loading. The pair in use is always kept."
+msgstr ""
+
+msgctxt "@label:spinbox"
+msgid "Keep idle language pairs loaded for"
+msgstr ""
+
+msgctxt "@info"
+msgid ""
+"After this long without use, a pair is unloaded and its memory is freed."
+msgstr ""
+
+msgctxt "@item:valuesuffix"
+msgid "%1 minute"
+msgid_plural "%1 minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+msgctxt "@label:spinbox"
+msgid "Stop the translation service when idle after"
+msgstr ""
+
+msgctxt "@info"
+msgid ""
+"Once nothing is loaded, the service leaves memory entirely after this long. "
+"It starts again by itself on the next request."
+msgstr ""
+
+msgctxt "@item:valuesuffix"
+msgid "%1 second"
+msgid_plural "%1 seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+msgctxt "@title:group"
+msgid "Network"
+msgstr ""
+
+msgctxt "@option:check"
+msgid "Allow downloads and update checks"
+msgstr ""
+
+msgctxt "@info"
+msgid ""
+"When off, the service never goes online. Installed language models keep "
+"working; new ones can come only from distribution packages."
+msgstr ""
+
+msgctxt "@option:check"
+msgid "Use pre-release language models"
+msgstr ""
+
+msgctxt "@info"
+msgid ""
+"Mozilla's nightly models, published for testing before a release. They may "
+"translate better or worse than the released ones."
+msgstr ""
+
+msgctxt "@title:group"
+msgid "Language Models"
+msgstr ""
+
+msgctxt "@info:status"
+msgid "Loading…"
+msgstr ""
+
+msgctxt "@info"
+msgid "The language models cannot be listed."
+msgstr ""
+
+msgctxt "@info"
+msgid "No language models are installed."
+msgstr ""
+
+msgctxt "@info"
+msgid ""
+"A model is downloaded the first time a program asks for a translation "
+"between two languages."
+msgstr ""
+
+msgctxt "@info model version"
+msgid "Version %1"
+msgstr ""
+
+msgctxt "@info model origin"
+msgid "from a system package"
+msgstr ""
+
+msgctxt "@info model origin"
+msgid "downloaded"
+msgstr ""
+
+msgctxt "@info %1 is a quality label such as Good"
+msgid "quality: %1"
+msgstr ""
+
+msgctxt "@info list separator"
+msgid ", "
+msgstr ""
+
+msgctxt "@info %1 is the model details"
+msgid "%1. Version %2 is available."
+msgstr ""
+
+msgctxt "@info:status model not yet released"
+msgid "Experimental"
+msgstr ""
+
+msgctxt "@info:status"
+msgid "Working…"
+msgstr ""
+
+msgctxt "@action:button"
+msgid "Remove"
+msgstr ""
+
+msgctxt "@info:tooltip"
+msgid "Remove the downloaded copy of %1"
+msgstr ""
+
+msgctxt "@label"
+msgid "Disk space used"
+msgstr ""
+
+msgctxt "@info %2 is a size such as 31 MiB"
+msgid "%2 for one language model"
+msgid_plural "%2 for %1 language models"
+msgstr[0] ""
+msgstr[1] ""
+
+msgctxt "@action:button"
+msgid "Checking for Updates…"
+msgstr ""
+
+msgctxt "@action:button"
+msgid "Check for Updates"
+msgstr ""
+
+msgctxt "@info"
+msgid "Downloads and update checks are turned off above."
+msgstr ""
+
+msgctxt "@info"
+msgid "Asks Mozilla's model service for newer versions."
+msgstr ""
+
+msgctxt "@action:button"
+msgid "Updating…"
+msgstr ""
+
+msgctxt "@action:button"
+msgid "Update All"
+msgstr ""
+
+msgctxt "@action:button"
+msgid "Manage in Krakoman"
+msgstr ""
+
+msgctxt "@info"
+msgid "Install language models for more languages, and translate text."
+msgstr ""
+
+msgctxt "@title:group"
+msgid "Status"
+msgstr ""
+
+msgctxt "@info"
+msgid "The translation service does not answer."
+msgstr ""
+
+msgctxt "@label"
+msgid "Version"
+msgstr ""
+
+msgctxt "@label"
+msgid "Memory in use"
+msgstr ""
+
+msgctxt "@label"
+msgid "Loaded language pairs"
+msgstr ""
+
+msgctxt "@info no language pairs loaded"
+msgid "None"
+msgstr ""
+
+msgctxt "@action:button"
+msgid "Refresh Status"
+msgstr ""
+
+msgctxt "@action:button"
+msgid "Show Status"
+msgstr ""
+
+msgctxt "@info"
+msgid ""
+"The version of the translation service, its memory use and the language "
+"pairs loaded right now."
+msgstr ""
