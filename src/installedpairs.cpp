@@ -289,7 +289,7 @@ void InstalledPairs::setErrorText(const QString &text)
 
 QString InstalledPairs::title(const QString &source, const QString &target) const
 {
-    return i18nc("@item language pair", "%1 to %2", Dragoman::languageName(source), Dragoman::languageName(target));
+    return i18nc("@item language pair", "%1 to %2", Dragoman::languageName(source), Dragoman::languageNameInSentence(target));
 }
 
 QString InstalledPairs::key(const QString &source, const QString &target)

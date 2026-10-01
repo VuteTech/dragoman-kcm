@@ -36,8 +36,9 @@ QStringList ServiceStatus::loaded() const
                 codes.append(part);
             }
         }
-        routes.append(codes.size() != 2 ? route
-                                        : i18nc("@item language pair", "%1 to %2", Dragoman::languageName(codes.at(0)), Dragoman::languageName(codes.at(1))));
+        routes.append(codes.size() != 2
+                          ? route
+                          : i18nc("@item language pair", "%1 to %2", Dragoman::languageName(codes.at(0)), Dragoman::languageNameInSentence(codes.at(1))));
     }
     return routes;
 }
