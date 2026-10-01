@@ -19,6 +19,55 @@ KCMUtils.SimpleKCM {
     readonly property bool configurable: config.state === DaemonConfig.Ready && !config.saving
 
     // The last message about a finished model operation.
+    // A labelled spin box with a description. FormCard.FormSpinBoxDelegate
+    // has neither description nor valueModified in Kirigami Addons 1.7
+    // (Debian 13), so the page builds its own from parts every version has.
+    component SpinBoxField: FormCard.AbstractFormDelegate {
+        id: field
+
+        required property string label
+        property string description
+        property alias value: spinBox.value
+        property alias from: spinBox.from
+        property alias to: spinBox.to
+        property alias stepSize: spinBox.stepSize
+        property alias textFromValue: spinBox.textFromValue
+        property alias valueFromText: spinBox.valueFromText
+
+        // Only for changes made with the spin box, not by bindings.
+        signal valueModified
+
+        background: null
+        focusPolicy: Qt.NoFocus
+        onClicked: spinBox.forceActiveFocus()
+
+        contentItem: ColumnLayout {
+            spacing: Kirigami.Units.smallSpacing
+
+            QQC2.Label {
+                Layout.fillWidth: true
+                text: field.label
+                wrapMode: Text.Wrap
+                color: field.enabled ? Kirigami.Theme.textColor : Kirigami.Theme.disabledTextColor
+            }
+
+            QQC2.SpinBox {
+                id: spinBox
+                Layout.fillWidth: true
+                editable: true
+                onValueModified: field.valueModified()
+            }
+
+            QQC2.Label {
+                Layout.fillWidth: true
+                visible: text.length > 0
+                text: field.description
+                wrapMode: Text.Wrap
+                color: Kirigami.Theme.disabledTextColor
+            }
+        }
+    }
+
     property string notice: ""
     property bool noticeIsError: false
 
@@ -62,7 +111,7 @@ KCMUtils.SimpleKCM {
         FormCard.FormCard {
             enabled: root.configurable
 
-            FormCard.FormSpinBoxDelegate {
+            SpinBoxField {
                 label: i18nc("@label:spinbox", "Memory budget for language models")
                 description: i18nc("@info", "The most memory the loaded language models may take together. One language pair needs about 260 MiB. When another pair would not fit, the one unused for longest is unloaded first.")
                 from: root.config.minMemoryBudgetMb
@@ -76,7 +125,7 @@ KCMUtils.SimpleKCM {
 
             FormCard.FormDelegateSeparator {}
 
-            FormCard.FormSpinBoxDelegate {
+            SpinBoxField {
                 label: i18nc("@label:spinbox", "Language pairs kept loaded when idle")
                 description: i18nc("@info", "Recently used pairs stay in memory, so the next translation starts at once instead of after a few seconds of loading. The pair in use is always kept.")
                 from: 0
@@ -87,7 +136,7 @@ KCMUtils.SimpleKCM {
 
             FormCard.FormDelegateSeparator {}
 
-            FormCard.FormSpinBoxDelegate {
+            SpinBoxField {
                 label: i18nc("@label:spinbox", "Keep idle language pairs loaded for")
                 description: i18nc("@info", "After this long without use, a pair is unloaded and its memory is freed.")
                 enabled: root.config.keepWarm > 0
@@ -101,7 +150,7 @@ KCMUtils.SimpleKCM {
 
             FormCard.FormDelegateSeparator {}
 
-            FormCard.FormSpinBoxDelegate {
+            SpinBoxField {
                 label: i18nc("@label:spinbox", "Stop the translation service when idle after")
                 description: i18nc("@info", "Once nothing is loaded, the service leaves memory entirely after this long. It starts again by itself on the next request.")
                 from: root.config.minIdleExitSeconds
