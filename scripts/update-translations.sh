@@ -12,6 +12,8 @@ podir="$root/po"
 export podir
 
 # The i18n() family of KI18n, in C++ and QML alike.
+# The commas belong to xgettext's keyword syntax.
+# shellcheck disable=SC2054
 keywords=(
     -ki18n:1 -ki18nc:1c,2 -ki18np:1,2 -ki18ncp:1c,2,3
     -kki18n:1 -kki18nc:1c,2 -kki18np:1,2 -kki18ncp:1c,2,3
@@ -27,6 +29,7 @@ cd "$root/src"
 bash ./Messages.sh
 # Messages.sh extracts the C++ sources; the QML files need the JavaScript
 # parser, and the two halves are merged.
+# shellcheck disable=SC2086 # the command is split into words on purpose
 find . -name '*.qml' | sort | xargs $XGETTEXT_QML -o "$podir/qml.pot"
 msgcat --use-first "$podir/kcm_dragomand.pot" "$podir/qml.pot" -o "$podir/kcm_dragomand.pot"
 rm "$podir/qml.pot"

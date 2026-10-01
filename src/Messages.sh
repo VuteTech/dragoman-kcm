@@ -7,5 +7,6 @@
 # $podir/kcm_dragomand.pot, following KDE's Messages.sh convention (XGETTEXT and
 # podir come from the environment). scripts/update-translations.sh runs it
 # and adds the strings of the QML files.
-# shellcheck disable=SC2154
+# The file list and XGETTEXT are split into words on purpose.
+# shellcheck disable=SC2154,SC2046,SC2086
 $XGETTEXT $(find . -name '*.cpp' -o -name '*.h' | sort) -o "$podir/kcm_dragomand.pot"
