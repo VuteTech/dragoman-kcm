@@ -1,0 +1,38 @@
+Source: dragoman-kcm
+Section: kde
+Priority: optional
+Maintainer: Blagovest Petrov <blagovest@petrovs.info>
+Build-Depends: debhelper-compat (= 13),
+ cmake (>= 3.24),
+ ninja-build,
+ extra-cmake-modules (>= 6.13),
+ gettext,
+ qt6-base-dev (>= 6.8),
+ qt6-declarative-dev (>= 6.8),
+ libkf6coreaddons-dev (>= 6.13),
+ libkf6i18n-dev (>= 6.13),
+ libkf6kcmutils-dev (>= 6.13),
+ libkf6kio-dev (>= 6.13),
+ libkf6service-dev (>= 6.13),
+ libdragoman-qt-dev,
+ dbus-daemon
+Standards-Version: 4.7.0
+Homepage: https://dragomand.l10n-bg.dev
+Vcs-Browser: https://github.com/VuteTech/dragoman-kcm
+Vcs-Git: https://github.com/VuteTech/dragoman-kcm.git
+Rules-Requires-Root: no
+
+Package: dragoman-kcm
+Architecture: amd64 arm64
+Depends: ${shlibs:Depends}, ${misc:Depends}, dragomand,
+ qml6-module-org-kde-kcmutils,
+ qml6-module-org-kde-kirigami,
+ qml6-module-org-kde-kirigamiaddons-formcard,
+ qml6-module-qtquick-controls,
+ qml6-module-qtquick-layouts
+Enhances: systemsettings
+Description: System Settings module for the Dragomand translation daemon
+ The Offline Translation page of System Settings, for the Dragomand
+ daemon: its memory and network settings, the installed language pairs
+ with their quality, removal of downloaded pairs and model updates, and
+ the daemon's status.
